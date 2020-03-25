@@ -1,0 +1,95 @@
+<!--This is my second project in attempt to build a survey form page-->
+
+<!DOCTYPE html>
+<style>
+    html {
+        font-size: 10px;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+        font-size: 2rem;
+        line-height: 1;
+        text-align: center;
+        color: black;
+        margin: 0;
+    }
+
+    #description {
+        font-size: 1.5rem;
+    }
+
+    #survey-form {
+        text-align:left;
+        margin: 25px 100px 25px;
+        padding: 5px 25px 5px 25px;
+        border-radius: 5px;
+        background: #eee
+    }
+
+    .bullets {
+        font-size: 2.5rem
+    }
+
+
+</style>
+
+
+<html>
+    <title>freeCodeCamp Survey</title>
+    <main id="form">
+        <h1 id="title">freeCodeCamp Survery Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label class="bullets" id="name-label"><p>Name</p><input class="bullets" id="name" type="text" placeholder="Enter your name">
+        </label>
+        <label class="bullets" id="email-label" for="Email"><p>Email</p><input class="bullets" id="email" type="email" placeholder="Enter your email">
+        </label>
+        <label class="bullets" id="number-label" for="age"><p>Age (Optional)</p><input class="bullets" id="number" type="number" placeholder="Age">
+        </label>
+        <div class="form-group">
+            <p>
+                which option best describes your current role?
+            </p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full time Learner</option>
+                <option value="preferNo"> Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <label class="bullets" id="role" for="role"><p>Which option best describes your current role?</p><input id="dropdown" type="text" placeholder="Enter your name">
+        </label>
+        <p class="bullets" id="recommendation">Would you recommend freeCodeCamp to a friend?</p>
+        <label for="Definitely"><input id="definitely" type="radio" name="Recommend"> Definitely
+        </label>
+        <p><label for="Maybe">
+            <input id="maybe" type="radio" name="Recommend"> <!-- name must be the same for the whole group--> Maybe
+        </label></p>
+        <p>
+            <label for="not sure">
+                <input id="not-sure" type="radio" name="Recommend"> Not Sure
+            </label>
+        </p>
+        <p class="bullets" id="improve sentence">
+            What would you like to see improved? (Check all that apply)
+        </p>
+        <label for="front-end"><input id="front-end" type="checkbox" name="recommendation">
+            Front-end Projects
+        </label>
+        <p><label for="back-end"><input id="back-end" type="checkbox" name="recommendation">
+            Back-end Projects
+        </label></p>
+        <p class="bullets" id="comment question">Any comments or suggestions?</p>
+        <label for="comment">
+            <input id="comment" type="textarea" placeholder="Enter your comment here...">
+        </label>
+        <p>
+            <button id="submit" type="submit">Submit</button>
+        </p>   
+
+
+    </form>
+</main>
+</html>
